@@ -4,8 +4,8 @@ This registry enables you to collect uniform phone number from users with the he
 
 ### Installation
 
-- bunx --bun shadcn@latest init
-- bunx --bun shadcn@latest add https://shadcn-phone.vercel.app/r/phone.json
+- `bunx --bun shadcn@latest init`
+- `bunx --bun shadcn@latest add https://shadcn-phone.vercel.app/r/phone.json`
 
 ### Usage
 
@@ -28,3 +28,24 @@ If you are developing an app with multiple languages I recommend you to translat
 - This is the variable that translates [ISO-3166-2 Codes](https://en.wikipedia.org/wiki/ISO_3166-2#Current_codes) to actual countries.
 - For example `countryNames["HU"]` will return `Hungary`.
 - Replace this logic everywhere with your current translation logic.
+
+If you wonder why your scrollbar is ugly add this to your css file:
+```
+::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 0.4rem solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  background-color: var(--border);
+  border-radius: var(--radius);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border: 0.4rem solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  background-color: var(--accent);
+  border-radius: var(--radius);
+}
+```
