@@ -2,6 +2,8 @@
 
 This registry enables you to collect uniform phone number from users with the help of the [libphonenumber-js](https://www.npmjs.com/package/libphonenumber-js) library. It is great for large project which rely on consistent and international phone number formats.
 
+<img src="/assets/banner.png"/>
+
 ### Installation
 
 - `bunx --bun shadcn@latest init`
@@ -12,6 +14,8 @@ This registry enables you to collect uniform phone number from users with the he
 It is super easy to use since it is built around a standard `<input type="tel"/>` element. So it also takes the properties of an input element enabling you to use it anywhere.
 
 `<Phone name="phone" placeholder="Your phone number"/>`
+
+<img src="/assets/demo.png"/>
 
 ### Dependencies
 
