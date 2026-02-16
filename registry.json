@@ -1,0 +1,30 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "phone",
+  "homepage": "https://github.com/vorhdam/phone",
+  "items": [
+    {
+      "name": "phone",
+      "type": "registry:block",
+      "title": "Phone",
+      "description": "A simple component that allows you to collect phone numbers.",
+      "dependencies": ["libphonenumber-js"],
+      "registryDependencies": [
+        "input-group",
+        "popover",
+        "command",
+        "https://shadcn-flags.vercel.app/r/flag.json"
+      ],
+      "files": [
+        {
+          "path": "src/registry/new-york/phone/ui/phone.tsx",
+          "type": "registry:ui"
+        },
+        {
+          "path": "src/registry/new-york/phone/lib/countries.json",
+          "type": "registry:lib"
+        }
+      ]
+    }
+  ]
+}
