@@ -24,7 +24,23 @@
           "path": "src/registry/new-york/phone/lib/countries.json",
           "type": "registry:lib"
         }
-      ]
+      ],
+      "css": {
+        "@layer base": {
+          "::-webkit-scrollbar": {
+            "width": "1.2rem"
+          },
+          "::-webkit-scrollbar-thumb": {
+            "border": "0.4rem solid rgba(0, 0, 0, 0)",
+            "background-clip": "padding-box",
+            "background-color": "hsl(var(--border))",
+            "border-radius": "var(--radius)"
+          },
+          "::-webkit-scrollbar-thumb:hover": {
+            "background-color": "hsl(var(--accent))"
+          }
+        }
+      }
     }
   ]
 }
