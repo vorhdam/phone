@@ -13,7 +13,7 @@ import parsePhoneNumberFromString, {
   getCountryCallingCode,
 } from "libphonenumber-js";
 import * as React from "react";
-import countryNames from "../lib/countries.json";
+import countryNames from "@/lib/countries.json";
 import { Flag } from "@/components/ui/flag";
 import { cn } from "@/lib/utils";
 import {
